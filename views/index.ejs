@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<form method="post" enctype="multipart/form-data" action="/createUser">
+    <input name="email">
+    <input name="password">
+    <input type="file" name="avatar">
+    <button type="submit">submit</button>
+</form>
+
+</body>
 </html>
