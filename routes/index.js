@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('getUser',function (rep,res) {
+router.get('/getUser',function (rep,res) {
   fs.readFile('data/data.txt',function (err,data) {
     if (err!=null){
       res.send(err.message);
